@@ -108,6 +108,22 @@ export function organizationSchema() {
   };
 }
 
+export function touristAttractionListSchema(items) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "TouristAttraction",
+        name: it.name,
+        description: it.description,
+      },
+    })),
+  };
+}
+
 export function breadcrumbSchema(items) {
   return {
     "@context": "https://schema.org",

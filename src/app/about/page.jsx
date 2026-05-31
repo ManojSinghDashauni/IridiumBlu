@@ -19,7 +19,7 @@ export default function AboutPage() {
         </GsapReveal>
       </section>
       <section className="mx-auto max-w-7xl px-6 grid gap-12 md:grid-cols-2 items-center mb-24">
-        <GsapReveal><img src="https://images.unsplash.com/photo-1518737743670-2bf64a9f6a76?auto=format&fit=crop&w=1400&q=80" alt="Kumaoni hillside village" className="w-full aspect-[4/5] object-cover rounded-lg" /></GsapReveal>
+        <GsapReveal><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80" alt="Kumaoni hillside village" className="w-full aspect-[4/5] object-cover rounded-lg" /></GsapReveal>
         <GsapReveal><SectionHeading eyebrow="Our story" title="A pilgrimage that became a home." description="We first came to Kainchi as visitors and never quite left." /></GsapReveal>
       </section>
     </>

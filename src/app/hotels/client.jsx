@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 const VIEWS = ["All", "Valley", "Forest", "Mountain", "Garden"];
 
 export function HotelsClient() {
-  const [view, setView] = useState<(typeof VIEWS)[number]>("All");
+  const [view, setView] = useState("All");
   const filtered = useMemo(() => (view === "All" ? rooms : rooms.filter((r) => r.view === view)), [view]);
 
   return (

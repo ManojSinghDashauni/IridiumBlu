@@ -7,9 +7,10 @@ export const PROPERTY = {
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
   image: `${SITE_URL}/og-cover.jpg`,
-  telephone: "+91-99999-99999",
+  telephone: "+91-77788-83561",
+  telephone2: "+91-77788-83563",
   priceRange: "₹₹₹",
-  email: "stay@kainchiretreat.com",
+  email: "resv@iridiumblue.com",
   address: {
     streetAddress: "Kainchi Dham Road",
     addressLocality: "Nainital",

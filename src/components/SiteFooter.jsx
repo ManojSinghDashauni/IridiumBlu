@@ -13,7 +13,7 @@ export function SiteFooter() {
         <FooterCol title="Explore"><FooterLink href="/things-to-do">Things to Do</FooterLink><FooterLink href="/about">About</FooterLink><FooterLink href="/contact">Contact</FooterLink></FooterCol>
         <FooterCol title="Reach us">
           <p className="text-sm text-muted-foreground">{PROPERTY.address.streetAddress}<br />{PROPERTY.address.addressLocality}, {PROPERTY.address.addressRegion} {PROPERTY.address.postalCode}</p>
-          <p className="mt-3 text-sm text-muted-foreground"><a href={`tel:${PROPERTY.telephone}`}>{PROPERTY.telephone}</a><br /><a href={`mailto:${PROPERTY.email}`}>{PROPERTY.email}</a></p>
+          <p className="mt-3 text-sm text-muted-foreground"><a href={`tel:${PROPERTY.telephone}`}>{PROPERTY.telephone}</a><br /><a href={`tel:${PROPERTY.telephone2}`}>{PROPERTY.telephone2}</a><br /><a href={`mailto:${PROPERTY.email}`}>{PROPERTY.email}</a></p>
         </FooterCol>
       </div>
     </footer>

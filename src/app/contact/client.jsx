@@ -45,7 +45,9 @@ export function ContactClient() {
         </GsapReveal>
         <GsapReveal className="lg:col-span-2 space-y-6">
           <ContactRow icon={<MapPin className="size-4" />} title="Address">{PROPERTY.address.streetAddress}<br />{PROPERTY.address.addressLocality}, {PROPERTY.address.addressRegion} {PROPERTY.address.postalCode}</ContactRow>
-          <ContactRow icon={<Phone className="size-4" />} title="Phone"><a href={`tel:${PROPERTY.telephone}`}>{PROPERTY.telephone}</a></ContactRow>
+          <ContactRow icon={<Phone className="size-4" />} title="Phone"><a href={`tel:${PROPERTY.telephone}`}>{PROPERTY.telephone}</a><br/>
+          <a href={`tel:${PROPERTY.telephone2}`}>{PROPERTY.telephone2}</a></ContactRow>
+        
           <ContactRow icon={<Mail className="size-4" />} title="Email"><a href={`mailto:${PROPERTY.email}`}>{PROPERTY.email}</a></ContactRow>
         </GsapReveal>
       </section>

@@ -10,7 +10,7 @@ export const PROPERTY = {
   telephone: "+91-77788-83561",
   telephone2: "+91-77788-83563",
   priceRange: "₹₹₹",
-  email: "resv@iridiumblue.com",
+  email: "contact@iridiumblu.com",
   address: {
     streetAddress: "Kainchi Dham Road",
     addressLocality: "Nainital",

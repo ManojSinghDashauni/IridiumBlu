@@ -2,80 +2,54 @@
 
 export const rooms = [
   {
-    id: "deodar-suite",
-    name: "Deodar Suite",
+    id: "deluxe-room",
+    name: "Deluxe Room",
     description:
-      "A serene suite framed by ancient deodar trees with a private balcony overlooking the Kainchi valley.",
-    pricePerNight: 14500,
+      "Perfect for couples, solo travellers, and pilgrims seeking comfort and convenience.",
+    pricePerNight: 6000,
     capacity: 2,
     size: "42 m²",
     view: "Valley",
-    amenities: ["King bed", "Soaking tub", "Private balcony", "Fireplace"],
+    amenities: ["Couples","Solo Travellers","Pilgrims"],
     image:
       "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1400&q=80",
   },
   {
-    id: "kumaoni-cottage",
-    name: "Kumaoni Cottage",
+    id: "premium-deluxe-room",
+    name: "Premium Deluxe Room",
     description:
-      "Stand-alone slate-roof cottage with hand-loomed textiles and an outdoor sit-out by the pine grove.",
-    pricePerNight: 18900,
+      "Experience enhanced comfort with spacious interiors, elegant décor, and premium amenities.",
+    pricePerNight: 7000,
     capacity: 3,
     size: "58 m²",
     view: "Forest",
-    amenities: ["Living area", "Wood stove", "Outdoor patio", "Rain shower"],
+    amenities: ["Couples", "Small Families", "Long Stay Guests",],
     image:
       "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80",
   },
   {
-    id: "ashram-room",
-    name: "Ashram View Room",
+    id: "executive-mountain-view-room",
+    name: "Executive Mountain View Room",
     description:
       "A quiet contemplative room with a window seat facing the Kainchi Dham temple ridge.",
-    pricePerNight: 9800,
+    pricePerNight: 8500,
     capacity: 2,
     size: "28 m²",
     view: "Mountain",
-    amenities: ["Queen bed", "Meditation nook", "Tea station"],
+    amenities: ["Nature Lovers", "Honeymoon Couples", "Premium Travellers"],
     image:
       "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=80",
   },
   {
-    id: "garden-studio",
-    name: "Garden Studio",
+    id: "family-room",
+    name: "Family Room",
     description:
-      "Ground-floor studio opening to the rose garden — perfect for slow mornings with chai.",
-    pricePerNight: 8200,
+      "Designed especially for families, our spacious Family Rooms feature a comfortable King Size Bed along with a Large Upper King Size Bunk Bed (available in selected rooms), making them ideal for families with children and small groups.",
+    pricePerNight: 10000,
     capacity: 2,
     size: "32 m²",
     view: "Garden",
-    amenities: ["Queen bed", "Garden access", "Reading desk"],
-    image:
-      "https://images.unsplash.com/photo-1551776235-dde6d482980b?auto=format&fit=crop&w=1400&q=80",
-  },
-  {
-    id: "himalaya-villa",
-    name: "Himalaya Villa",
-    description:
-      "Two-bedroom villa with a private deck, hot tub, and uninterrupted Nanda Devi views on clear mornings.",
-    pricePerNight: 32500,
-    capacity: 5,
-    size: "120 m²",
-    view: "Mountain",
-    amenities: ["2 bedrooms", "Private deck", "Hot tub", "Butler service"],
-    image:
-      "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1400&q=80",
-  },
-  {
-    id: "valley-suite",
-    name: "Valley Suite",
-    description:
-      "Floor-to-ceiling glass framing the river valley, with a soaking tub angled to the view.",
-    pricePerNight: 16800,
-    capacity: 2,
-    size: "48 m²",
-    view: "Valley",
-    amenities: ["King bed", "Soaking tub", "Lounge area"],
+    amenities: ["Families", "Pilgrimage Groups", "Friends Travelling Together"],
     image:
       "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80",
   },

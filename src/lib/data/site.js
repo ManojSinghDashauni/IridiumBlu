@@ -264,21 +264,21 @@ export const eventTypes = [
 export const testimonials = [
   {
     quote:
-      "The most peaceful three days we've had in years. The cafe alone is worth the drive from Delhi.",
-    author: "Ananya & Karan",
-    location: "New Delhi",
+      "Wonderful stay with excellent hospitality, clean rooms, delicious food, and a perfect Kainchi Dham location.",
+    author: "Sushma Bhandari Badoni",
+    location: "Uttarakhand",
   },
   {
     quote:
-      "Felt like stepping into a slower century. The staff remember your tea before you do.",
-    author: "Maya Iyer",
-    location: "Mumbai",
+      "Clean rooms, warm hospitality, delicious food, and a peaceful stay near Kainchi Dham.",
+    author: "Komal Sundriyal",
+    location: "Dehradun",
   },
   {
     quote:
-      "Our wedding here was intimate, warm, and absolutely beautiful. They thought of everything.",
-    author: "Rhea & Vikram",
-    location: "Bangalore",
+      "Peaceful ambiance, comfortable rooms, excellent service, and a perfect stay near Kainchi Dham.",
+    author: "Sahil Rajput",
+    location: "Uttar Pradesh",
   },
 ];
 

@@ -80,7 +80,7 @@ function Hero() {
         width={800}
             height={1000}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-background" />
+      <div className="absolute inset-0 bg-linear-to-b from-background/50 via-black/25 to-black" />
     </div>
 
     <GsapReveal as="div" className="relative z-10 mx-auto max-w-7xl w-full px-6 pb-24 pt-40" stagger={0.15}>
@@ -88,7 +88,9 @@ function Hero() {
         Near Kainchi Dham · Nainital · Uttarakhand
       </p>
       <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white max-w-5xl leading-[1.02] mt-4">
-        Welcome to Iridium Blu Hotel
+        Welcome to 
+        <br/>
+        <span>Iridium Blu Hotel</span>
       </h1>
       <p className="mt-6 text-lg md:text-xl text-white/85 max-w-2xl">
         Experience peace, comfort & luxury just 5 minutes from the sacred Kainchi Dham

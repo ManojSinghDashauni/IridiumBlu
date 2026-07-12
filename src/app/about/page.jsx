@@ -83,21 +83,31 @@ export default function AboutPage() {
 
 function Hero() {
   return (
-    <section className="pt-32 pb-16 mx-auto max-w-4xl px-6 text-center">
-        <GsapReveal>
-          <p className="text-xs uppercase tracking-[0.3em] text-primary">About Us</p>
-          <h1 className="font-display text-5xl md:text-7xl mt-4 leading-tight">
-            Where Luxury Meets Spiritual Serenity
+
+    <section className="relative h-[85vh] flex items-end overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2400&q=80"
+          fill
+        priority
+          alt="Rooftop café with Himalayan mountain views"
+          className="absolute inset-0 size-full object-cover"
+        />
+        <div className="absolute inset-0 bg-linear-to-t from-background via-black/50 to-background/30" />
+        <GsapReveal className="relative mx-auto max-w-7xl w-full px-6 pb-20">
+          <p className="text-xs uppercase tracking-[0.3em] text-white/80">About Us</p>
+          <h1 className="font-display text-5xl md:text-7xl text-white mt-3 max-w-3xl leading-tight">
+          Where Luxury Meets Spiritual Serenity
           </h1>
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            IRIDIUM BLU HOTEL (A Unit of SYDRUV LLP) is a premium boutique hotel located near the
-            sacred Kainchi Dham in the beautiful Kumaon Hills of Uttarakhand — a perfect blend of
-            luxury, comfort, spirituality, and authentic Indian hospitality.
+          <p className="mt-6 text-white/85 text-lg max-w-4xl">
+          IRIDIUM BLU HOTEL (A Unit of SYDRUV LLP) is a premium boutique hotel located near the
+    sacred Kainchi Dham in the beautiful Kumaon Hills of Uttarakhand — a perfect blend of
+    luxury, comfort, spirituality, and authentic Indian hospitality.
           </p>
         </GsapReveal>
       </section>
   );
 }
+
 
 /* ==========================================================
                     OUR STORY

@@ -104,7 +104,7 @@ function Hero() {
           alt="Rooftop café with Himalayan mountain views"
           className="absolute inset-0 size-full object-cover"
         />
-        <div className="absolute inset-0 bg-linear-to-t from-background via-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-background via-black/50 to-background/30" />
         <GsapReveal className="relative mx-auto max-w-7xl w-full px-6 pb-20">
           <p className="text-xs uppercase tracking-[0.3em] text-white/80">Dining</p>
           <h1 className="font-display text-5xl md:text-7xl text-white mt-3 max-w-3xl leading-tight">

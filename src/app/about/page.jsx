@@ -10,6 +10,7 @@ import {
   HandHeart,
 } from "lucide-react";
 
+import ContentSection from "@/components/ContentSection";
 import { Button } from "@/components/ui/button";
 import { GsapReveal } from "@/components/GsapReveal";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -102,31 +103,51 @@ function Hero() {
                     OUR STORY
 ========================================================== */
 
+// function Story() {
+//   return (
+//     <section className="mx-auto max-w-7xl px-6 grid gap-12 md:grid-cols-2 items-center mb-24">
+//         <GsapReveal>
+//           <Image
+//             src="https://images.unsplash.com/photo-1518737743670-2bf64a9f6a76?auto=format&fit=crop&w=1400&q=80"
+//             alt="Kumaon Himalayan hillside"
+//             className="w-full aspect-[4/5] object-cover rounded-lg"
+//             priority
+//             width={800}
+//             height={1000}
+//           />
+//         </GsapReveal>
+//         <GsapReveal>
+//           <SectionHeading
+//             eyebrow="Our story"
+//             title="Created with a simple, meaningful purpose."
+//             description="IRIDIUM BLU HOTEL was founded to create a destination where guests experience the warmth of Indian hospitality with modern comforts in the peaceful Himalayas. Every detail — from spacious rooms and premium interiors to the rooftop restaurant, meditation room, spiritual library, and family-friendly facilities — has been thoughtfully designed."
+//           />
+//           <p className="mt-6 text-muted-foreground leading-relaxed">
+//             We believe true hospitality is not just about providing accommodation — it is about
+//             creating memorable experiences that guests cherish long after they leave.
+//           </p>
+//         </GsapReveal>
+//       </section>
+//   );
+// }
+
 function Story() {
   return (
-    <section className="mx-auto max-w-7xl px-6 grid gap-12 md:grid-cols-2 items-center mb-24">
-        <GsapReveal>
-          <Image
-            src="https://images.unsplash.com/photo-1518737743670-2bf64a9f6a76?auto=format&fit=crop&w=1400&q=80"
-            alt="Kumaon Himalayan hillside"
-            className="w-full aspect-[4/5] object-cover rounded-lg"
-            priority
-            width={800}
-            height={1000}
-          />
-        </GsapReveal>
-        <GsapReveal>
-          <SectionHeading
-            eyebrow="Our story"
-            title="Created with a simple, meaningful purpose."
-            description="IRIDIUM BLU HOTEL was founded to create a destination where guests experience the warmth of Indian hospitality with modern comforts in the peaceful Himalayas. Every detail — from spacious rooms and premium interiors to the rooftop restaurant, meditation room, spiritual library, and family-friendly facilities — has been thoughtfully designed."
-          />
-          <p className="mt-6 text-muted-foreground leading-relaxed">
-            We believe true hospitality is not just about providing accommodation — it is about
-            creating memorable experiences that guests cherish long after they leave.
-          </p>
-        </GsapReveal>
-      </section>
+    <ContentSection
+      eyebrow="Our story"
+      title="Created with a simple, meaningful purpose."
+      description="IRIDIUM BLU HOTEL was founded to create a destination where guests experience the warmth of Indian hospitality with modern comforts in the peaceful Himalayas. Every detail — from spacious rooms and premium interiors to the rooftop restaurant, meditation room, spiritual library, and family-friendly facilities — has been thoughtfully designed."
+      image="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=2400&q=80"
+      imageAlt="Kumaon Himalayan hillside"
+      priority
+      sectionClassName="mb-24"
+    >
+      <p className="mt-6 text-muted-foreground leading-relaxed">
+        We believe true hospitality is not just about providing accommodation —
+        it is about creating memorable experiences that guests cherish long
+        after they leave.
+      </p>
+    </ContentSection>
   );
 }
 

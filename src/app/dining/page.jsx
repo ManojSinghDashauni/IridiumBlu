@@ -13,6 +13,7 @@ import {
   Check,
 } from "lucide-react";
 
+import ContentSection from "@/components/ContentSection";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/SectionHeading";
 import { GsapReveal } from "@/components/GsapReveal";
@@ -122,41 +123,63 @@ function Hero() {
                     INTRO SECTION
 ========================================================== */
 
+// function IntroSection() {
+//   return (
+//     <section className="mx-auto max-w-7xl px-6 py-24 grid gap-12 md:grid-cols-2 items-center">
+//         <GsapReveal>
+//           <SectionHeading
+//             eyebrow="100% Pure Vegetarian"
+//             title="Every meal, crafted with care and purity."
+//             description="Fresh ingredients, hygienic practices, and traditional recipes — our restaurant is specially designed for pilgrims, families, senior citizens, corporate guests, and long-stay travellers."
+//           />
+//           <ul className="mt-6 grid gap-2 sm:grid-cols-2">
+//             {[
+//               "Pilgrims visiting Kainchi Dham",
+//               "Families",
+//               "Senior Citizens",
+//               "Corporate Guests",
+//               "Nature Lovers",
+//               "Group Travellers",
+//             ].map((t) => (
+//               <li key={t} className="flex items-start gap-2 text-foreground/85">
+//                 <Check className="size-5 text-primary mt-0.5 shrink-0" />
+//                 <span>{t}</span>
+//               </li>
+//             ))}
+//           </ul>
+//         </GsapReveal>
+//         <GsapReveal>
+//         <Image
+//             src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=80"
+//             alt="Indoor dining setup"
+//             width={800}
+//             height={1000}
+//             className="rounded-2xl object-cover w-full aspect-[4/3]"
+//           />
+//         </GsapReveal>
+//       </section>
+//   );
+// }
+
 function IntroSection() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24 grid gap-12 md:grid-cols-2 items-center">
-        <GsapReveal>
-          <SectionHeading
-            eyebrow="100% Pure Vegetarian"
-            title="Every meal, crafted with care and purity."
-            description="Fresh ingredients, hygienic practices, and traditional recipes — our restaurant is specially designed for pilgrims, families, senior citizens, corporate guests, and long-stay travellers."
-          />
-          <ul className="mt-6 grid gap-2 sm:grid-cols-2">
-            {[
-              "Pilgrims visiting Kainchi Dham",
-              "Families",
-              "Senior Citizens",
-              "Corporate Guests",
-              "Nature Lovers",
-              "Group Travellers",
-            ].map((t) => (
-              <li key={t} className="flex items-start gap-2 text-foreground/85">
-                <Check className="size-5 text-primary mt-0.5 shrink-0" />
-                <span>{t}</span>
-              </li>
-            ))}
-          </ul>
-        </GsapReveal>
-        <GsapReveal>
-        <Image
-            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=80"
-            alt="Indoor dining setup"
-            width={800}
-            height={1000}
-            className="rounded-2xl object-cover w-full aspect-[4/3]"
-          />
-        </GsapReveal>
-      </section>
+    <ContentSection
+      eyebrow="100% Pure Vegetarian"
+      title="Every meal, crafted with care and purity."
+      description="Fresh ingredients, hygienic practices, and traditional recipes — our restaurant is specially designed for pilgrims, families, senior citizens, corporate guests, and long-stay travellers."
+      image="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=80"
+      imageAlt="Indoor dining setup"
+      imagePosition="right"
+      imageClassName="w-full aspect-[4/3] object-cover rounded-2xl"
+      listItems={[
+        "Pilgrims visiting Kainchi Dham",
+        "Families",
+        "Senior Citizens",
+        "Corporate Guests",
+        "Nature Lovers",
+        "Group Travellers",
+      ]}
+    />
   );
 }
 
@@ -221,9 +244,11 @@ function RooftopExperience() {
   return (
 
     <section className="relative py-32 overflow-hidden">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80"
           alt="Rooftop café panoramic Himalayan view"
+          width={800}
+            height={1000}
           className="absolute inset-0 size-full object-cover"
         />
         <div className="absolute inset-0 bg-black/65" />

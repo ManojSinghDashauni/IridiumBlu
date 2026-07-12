@@ -3,7 +3,7 @@ import { PROPERTY } from "@/lib/seo/structured-data";
 
 export function SiteFooter() {
   return (
-    <footer className="mt-24 border-t border-border bg-secondary/30">
+    <footer className=" border-t border-border bg-secondary/30">
       <div className="mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-1">
           <div className="font-display text-2xl">Iridium<span className="text-primary"> Blu</span></div>

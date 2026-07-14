@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const NAV = [
   { href: "/", label: "Home" },
@@ -30,14 +31,52 @@ export function SiteHeader() {
   }, []);
 
   return (
-    <header className={cn("fixed inset-x-0 top-0 z-50 transition-all duration-300", scrolled ? "bg-background/85 backdrop-blur-md border-b border-border/60" : "bg-transparent")}>
+    <header
+      className={cn(
+        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
+        scrolled
+          ? "bg-background/85 backdrop-blur-md border-b border-border/60"
+          : "bg-transparent"
+      )}
+    >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-2 group" onClick={() => setOpen(false)}>
-          <span className="font-display text-2xl tracking-tight text-foreground">Iridium<span className="text-primary"> Blu</span></span>
+        <Link
+          href="/"
+          className="flex items-center gap-2 group"
+          onClick={() => setOpen(false)}
+        >
+            {/* Desktop Logo */}
+  <Image
+    src="/logo-desktop.png"
+    alt="Iridium Blu"
+    width={180}
+    height={60}
+    className="hidden md:block h-10 w-auto"
+    priority
+  />
+
+  {/* Mobile Logo */}
+  <Image
+    src="/logo-mobile.png"
+    alt="Iridium Blu"
+    width={120}
+    height={40}
+    className="block md:hidden h-8 w-auto"
+    priority
+  />
         </Link>
         <nav className="hidden lg:flex items-center gap-7">
           {NAV.slice(1, -1).map((item) => (
-            <Link key={item.href} href={item.href} className={cn("text-sm transition-colors", pathname === item.href ? "text-foreground font-medium" : "text-foreground/75 hover:text-foreground")}>
+            <Link
+              key={item.href}
+              href={item.href}
+              className={cn(
+                "text-sm transition-colors",
+                pathname === item.href
+                  ? "text-foreground font-medium"
+                  : "text-foreground/75 hover:text-foreground"
+              )}
+            >
               {item.label}
             </Link>
           ))}
@@ -46,7 +85,10 @@ export function SiteHeader() {
           <Button asChild className="hidden sm:inline-flex rounded-full px-6">
             <Link href="/contact">Reserve</Link>
           </Button>
-          <button onClick={() => setOpen((v) => !v)} className="lg:hidden rounded-full p-2 text-foreground hover:bg-accent">
+          <button
+            onClick={() => setOpen((v) => !v)}
+            className="lg:hidden rounded-full p-2 text-foreground hover:bg-accent"
+          >
             {open ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
         </div>
@@ -55,7 +97,17 @@ export function SiteHeader() {
         <div className="lg:hidden border-t border-border/60 bg-background/95 backdrop-blur-md">
           <nav className="mx-auto max-w-7xl px-6 py-4 flex flex-col gap-1">
             {NAV.map((item) => (
-              <Link key={item.href} href={item.href} onClick={() => setOpen(false)} className={cn("px-3 py-2.5 rounded-md transition-colors", pathname === item.href ? "bg-accent text-foreground font-medium" : "text-foreground/80 hover:bg-accent hover:text-foreground")}>
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className={cn(
+                  "px-3 py-2.5 rounded-md transition-colors",
+                  pathname === item.href
+                    ? "bg-accent text-foreground font-medium"
+                    : "text-foreground/80 hover:bg-accent hover:text-foreground"
+                )}
+              >
                 {item.label}
               </Link>
             ))}

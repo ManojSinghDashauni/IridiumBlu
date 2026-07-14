@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import hotel1 from "../../../public/image/hotel.jpeg"
+import hotel2 from "../../../public/image/hotel2.jpeg"
+
 import {
   Check,
   Leaf,
@@ -86,11 +89,12 @@ function Hero() {
 
     <section className="relative h-[85vh] flex items-end overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2400&q=80"
+          // src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2400&q=80"
+          src={hotel1}
           fill
         priority
           alt="Rooftop café with Himalayan mountain views"
-          className="absolute inset-0 size-full object-cover"
+          className="absolute inset-0 size-full object-cover object-bottom"
         />
         <div className="absolute inset-0 bg-linear-to-t from-background via-black/50 to-background/30" />
         <GsapReveal className="relative mx-auto max-w-7xl w-full px-6 pb-20">
@@ -147,7 +151,9 @@ function Story() {
       eyebrow="Our story"
       title="Created with a simple, meaningful purpose."
       description="IRIDIUM BLU HOTEL was founded to create a destination where guests experience the warmth of Indian hospitality with modern comforts in the peaceful Himalayas. Every detail — from spacious rooms and premium interiors to the rooftop restaurant, meditation room, spiritual library, and family-friendly facilities — has been thoughtfully designed."
-      image="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=2400&q=80"
+      // image="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=2400&q=80"
+      image={hotel2}
+      imageClassName = "w-full aspect-[5/4] object-cover object-bottom rounded-lg"
       imageAlt="Kumaon Himalayan hillside"
       priority
       sectionClassName="mb-24"

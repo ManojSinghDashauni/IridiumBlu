@@ -134,7 +134,6 @@ export default function HotelsClient() {
 
 <BookingCTA />
 
-      {/* PART 2 STARTS HERE */}
     </>
   );
 }
@@ -155,7 +154,7 @@ function Hero() {
         className="object-cover"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-black/60 to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-t from-background via-black/60 to-transparent" />
 
       <GsapReveal className="relative z-10 mx-auto max-w-7xl w-full px-6 pb-20">
 

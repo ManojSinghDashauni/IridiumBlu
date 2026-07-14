@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+
+import building from "../../public/image/hotel building.jpeg"
 import {
   ArrowRight,
   MapPin,
@@ -171,9 +173,10 @@ function IntroStory() {
       eyebrow="A Unit of SYDRUV LLP"
       title="Peace, comfort & luxury near Kainchi Dham."
       description="Nestled in the serene Kumaon Hills of Uttarakhand, Iridium Blu Hotel offers a perfect blend of modern comfort, warm Indian hospitality, and peaceful mountain surroundings — ideal for pilgrims, families, couples, corporate travellers, and nature lovers."
-      image="https://images.unsplash.com/photo-1545158535-c3f7168c28b6?auto=format&fit=crop&w=1400&q=80"
-      imageAlt="Kainchi Dham temple"
-      background="bg-secondary/40"
+      image={building}
+      imageClassName="w-full  object-cover rounded-lg"
+      imageAlt="iridium blu hotel building"
+      background="bg-secondary/40 "
       buttonText="Our Story"
       buttonLink="/about"
     >

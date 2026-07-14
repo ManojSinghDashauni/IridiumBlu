@@ -1,5 +1,6 @@
 /** Mock data for the boutique hotel site. Swap with real backend later. */
 
+
 export const rooms = [
   {
     id: "deluxe",
@@ -9,8 +10,7 @@ export const rooms = [
     pricePerNight: 6000,
     idealFor: ["Couples", "Solo Travellers", "Pilgrims"],
     amenities: ["King Size Bed", "Smart LED TV", "Wi-Fi", "Air Conditioning"],
-    image:
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1400&q=80",
+    image:"/image/bed1.jpeg",
   },
   {
     id: "premium-deluxe",
@@ -20,8 +20,7 @@ export const rooms = [
     pricePerNight: 7000,
     idealFor: ["Couples", "Small Families", "Long Stay Guests"],
     amenities: ["King Size Bed", "Premium Linen", "Seating Area", "Tea/Coffee Maker"],
-    image:
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80",
+    image:"/image/bed2.jpeg",
   },
   {
     id: "executive-mountain-view",
@@ -32,7 +31,7 @@ export const rooms = [
     idealFor: ["Nature Lovers", "Honeymoon Couples", "Premium Travellers"],
     amenities: ["Mountain View", "King Size Bed", "Premium Bath", "Writing Desk"],
     image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1400&q=80",
   },
   {
     id: "family",
@@ -43,7 +42,7 @@ export const rooms = [
     idealFor: ["Families", "Pilgrimage Groups", "Friends Travelling Together"],
     amenities: ["King Bed + Bunk", "Family Seating", "Extra Bed on Request", "Kids Friendly"],
     image:
-      "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80",
   },
 ];
 

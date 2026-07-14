@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import dinning from "../../../public/image/table food.jpeg"
 
 import {
   UtensilsCrossed,
@@ -167,7 +168,8 @@ function IntroSection() {
       eyebrow="100% Pure Vegetarian"
       title="Every meal, crafted with care and purity."
       description="Fresh ingredients, hygienic practices, and traditional recipes — our restaurant is specially designed for pilgrims, families, senior citizens, corporate guests, and long-stay travellers."
-      image="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=80"
+      // image="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=80"
+      image={dinning}
       imageAlt="Indoor dining setup"
       imagePosition="right"
       imageClassName="w-full aspect-[4/3] object-cover rounded-2xl"

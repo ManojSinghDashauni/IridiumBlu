@@ -3,7 +3,7 @@ const SITE_URL = "https://iridiumblu.com";
 export const PROPERTY = {
   name: "iridiumblu",
   legalName: "iridiumblu Hotel",
-  description: "A premium hotel at Kainchi Dham.",
+  description: "A Unit of SYDRUV LLP",
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
   image: `${SITE_URL}/og-cover.jpg`,

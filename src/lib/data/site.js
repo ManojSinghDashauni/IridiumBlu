@@ -4,8 +4,8 @@ export const SITE = {
   // name: "Munsiyari Ride Hub",
   // tagline: "Ride Beyond Roads",
   // Replace with the real number (international format, no + or spaces) when available
-  whatsapp: "7778883561",
-  phone: "7778883563",
+  whatsapp: "7778883563",
+  phone: "7778883561",
   // email: "munsiyariridehub@gmail.com",
   // address: "Main Market Road, Munsiyari, Pithoragarh, Uttarakhand 262554",
   // city: "Munsiyari",

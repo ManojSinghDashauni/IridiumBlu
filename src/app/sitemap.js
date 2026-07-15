@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const BASE_URL = "https://earthy-glow-next.lovable.app";
+const BASE_URL = "https://iridiumblu.com/";
 
 export default function sitemap() {
   return [

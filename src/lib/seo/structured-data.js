@@ -1,16 +1,16 @@
 const SITE_URL = "https://iridiumblu.com";
 
 export const PROPERTY = {
-  name: "Kainchi Retreat",
-  legalName: "Kainchi Retreat Boutique Hotel",
-  description: "A premium boutique hotel near Kainchi Dham.",
+  name: "iridiumblu",
+  legalName: "iridiumblu Hotel",
+  description: "A premium hotel at Kainchi Dham.",
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
   image: `${SITE_URL}/og-cover.jpg`,
   telephone: "+91-77788-83561",
   telephone2: "+91-77788-83563",
   priceRange: "₹₹₹",
-  email: "contact@iridiumblu.com",
+  email: "resv@iridiumblue.com",
   address: {
     streetAddress: "Kainchi Dham Road",
     addressLocality: "Nainital",
@@ -19,8 +19,8 @@ export const PROPERTY = {
     addressCountry: "IN",
   },
   geo: {
-    latitude: 29.5731,
-    longitude: 79.6731,
+    latitude: 29.4328125,
+    longitude: 79.5086875,
   },
   amenities: ["Free Wi-Fi", "Mountain View"],
   starRating: 4,

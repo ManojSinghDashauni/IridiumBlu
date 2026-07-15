@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { Toaster } from "sonner";
 import { Providers } from "@/components/providers";
 import "./globals.css";
+import { ExitIntent, FloatingActions } from "@/components/FloatingActions";
 
 export const metadata = {
   title: {
@@ -32,6 +33,8 @@ export default function RootLayout({ children }) {
           <SiteHeader />
           <main className="min-h-screen">{children}</main>
           <SiteFooter />
+          <FloatingActions />
+      {/* <ExitIntent /> */}
           <Toaster />
         </Providers>
       </body>

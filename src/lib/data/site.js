@@ -1,48 +1,83 @@
 /** Mock data for the boutique hotel site. Swap with real backend later. */
 
+export const SITE = {
+  // name: "Munsiyari Ride Hub",
+  // tagline: "Ride Beyond Roads",
+  // Replace with the real number (international format, no + or spaces) when available
+  whatsapp: "7778883561",
+  phone: "7778883563",
+  // email: "munsiyariridehub@gmail.com",
+  // address: "Main Market Road, Munsiyari, Pithoragarh, Uttarakhand 262554",
+  // city: "Munsiyari",
+  // state: "Uttarakhand",
+  // hours: "7:00 AM – 8:00 PM, all days",
+  geo: {
+    latitude: 29.4328125,
+    longitude: 79.5086875,
+  },
+
+  mapsEmbed:
+    "https://www.google.com/maps?q=29.4328125,79.5086875&z=17&output=embed",
+
+  mapsDirections:
+    "https://www.google.com/maps/dir/?api=1&destination=29.4328125,79.5086875",
+
+  googleMapsUrl:
+    "https://www.google.com/maps/place/Iridium+Blu+Hotel+(a+unit+of+SYDRUV+LLP)/@29.4328125,79.5086875,17z/data=!3m1!4b1!4m6!3m5!1s0x39a0a3003a38f9c5:0xfce823cd512c06de!8m2!3d29.4328125!4d79.5086875!16s%2Fg%2F11npsy2tgk",
+};
+
+
+export function whatsappLink(message) {
+  return `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(message)}`;
+}
+
+export function bookingMessage(room) {
+  return room
+    ? `Hi Iridium Blu Hotel! I'd like to book the ${room}. Please share availability, pricing, and the booking details.`
+    : `Hi Iridium Blu Hotel! I'd like to book a room. Please share your room availability, pricing, and current offers.`;
+}
+
 
 export const rooms = [
   {
     id: "deluxe",
-    name: "Deluxe Room",
+    name: "Deluxe room with private outdoor seating",
     description:
       "Perfect for couples, solo travellers, and pilgrims seeking comfort and convenience just minutes from Kainchi Dham.",
     pricePerNight: 6000,
     idealFor: ["Couples", "Solo Travellers", "Pilgrims"],
     amenities: ["King Size Bed", "Smart LED TV", "Wi-Fi", "Air Conditioning"],
-    image:"/image/bed1.jpeg",
+    image:"/image/deluxe.jpeg",
   },
   {
     id: "premium-deluxe",
-    name: "Premium Deluxe Room",
+    name: "Premium deluxe room with balcony and mountain view",
     description:
       "Enhanced comfort with spacious interiors, elegant décor, and premium amenities for a relaxing Himalayan stay.",
     pricePerNight: 7000,
     idealFor: ["Couples", "Small Families", "Long Stay Guests"],
     amenities: ["King Size Bed", "Premium Linen", "Seating Area", "Tea/Coffee Maker"],
-    image:"/image/bed2.jpeg",
+    image:"/image/Premium.jpeg",
   },
   {
     id: "executive-mountain-view",
-    name: "Executive Mountain View Room",
+    name: "Executive loft room with balcony and mountain view",
     description:
       "Wake up to breathtaking Himalayan mountain views while enjoying the finest comforts of a premium boutique stay.",
     pricePerNight: 8500,
     idealFor: ["Nature Lovers", "Honeymoon Couples", "Premium Travellers"],
     amenities: ["Mountain View", "King Size Bed", "Premium Bath", "Writing Desk"],
-    image:
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1400&q=80",
+    image:"/image/Executive.jpeg",
   },
   {
     id: "family",
-    name: "Family Room",
+    name: "Family room with balcony and mountain view",
     description:
       "Spacious room with a King Size Bed and a Large Upper King Size Bunk Bed (selected rooms) — ideal for families with children and small groups.",
     pricePerNight: 10000,
     idealFor: ["Families", "Pilgrimage Groups", "Friends Travelling Together"],
     amenities: ["King Bed + Bunk", "Family Seating", "Extra Bed on Request", "Kids Friendly"],
-    image:
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80",
+    image:"/image/Family.jpeg",
   },
 ];
 

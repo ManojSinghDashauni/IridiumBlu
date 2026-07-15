@@ -11,6 +11,8 @@ import { toast } from "sonner";
 import { PROPERTY } from "@/lib/seo/structured-data";
 import { faqs } from "@/lib/data/site";
 
+import { SITE } from "../../lib/data/site";
+
 export function ContactClient() {
   const [sending, setSending] = useState(false);
 
@@ -50,6 +52,11 @@ export function ContactClient() {
         
           <ContactRow icon={<Mail className="size-4" />} title="Email"><a href={`mailto:${PROPERTY.email}`}>{PROPERTY.email}</a></ContactRow>
         </GsapReveal>
+      </section>
+      <section className="pb-24">
+      <div className="h-full min-h-105 w-5xl mx-auto overflow-hidden rounded-2xl border border-border shadow-sm">
+              <iframe title="Munsiyari Ride Hub location" src={SITE.mapsEmbed} className="h-full w-full" style={{ minHeight: 420, border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+            </div>
       </section>
       <section className="mx-auto max-w-4xl px-6 pb-24">
         <SectionHeading eyebrow="FAQ" title="Good to know." align="center" />

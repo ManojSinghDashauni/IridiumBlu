@@ -5,7 +5,7 @@ import { ContactClient } from "./client";
 
 export const metadata = {
   title: "Contact & Reservations",
-  description: "Get in touch for reservations, transfers, and event enquiries at Kainchi Retreat.",
+  description: "Get in touch for reservations, transfers, and event enquiries at Iridium Blu Hotel.",
   alternates: { canonical: canonical("/contact") },
 };
 

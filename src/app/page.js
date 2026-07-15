@@ -87,7 +87,7 @@ function Hero() {
 
     <GsapReveal as="div" className="relative z-10 mx-auto max-w-7xl w-full px-6 pb-24 pt-40" stagger={0.15}>
       <p className="text-xs uppercase tracking-[0.3em] text-white/80">
-        Near Kainchi Dham · Nainital · Uttarakhand
+        Kainchi Dham · Nainital · Uttarakhand
       </p>
       <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white max-w-5xl leading-[1.02] mt-4">
         Welcome to 

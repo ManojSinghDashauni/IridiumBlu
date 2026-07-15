@@ -31,7 +31,7 @@ import {
 export const metadata = {
   title: "Dining | Iridium Blu Hotel",
   description:
-    "Enjoy 100% pure vegetarian dining at Iridium Blu Hotel near Kainchi Dham with breathtaking Himalayan views.",
+    "Enjoy 100% pure vegetarian dining at Iridium Blu Hotel At Kainchi Dham with breathtaking Himalayan views.",
   alternates: {
     canonical: canonical("/dining"),
   },

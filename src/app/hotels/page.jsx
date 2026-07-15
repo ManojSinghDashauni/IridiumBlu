@@ -42,7 +42,7 @@ import {
 export const metadata = {
   title: "Rooms & Suites | Iridium Blu Hotel",
   description:
-    "Deluxe, Premium, Executive Mountain View and Family Rooms near Kainchi Dham.",
+    "Deluxe, Premium, Executive Mountain View and Family Rooms At Kainchi Dham.",
   alternates: {
     canonical: canonical("/hotels"),
   },

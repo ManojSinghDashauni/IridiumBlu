@@ -27,7 +27,7 @@ import {
 export const metadata = {
   title: "About | Iridium Blu Hotel",
   description:
-    "Learn about Iridium Blu Hotel near Kainchi Dham. Luxury boutique accommodation surrounded by the peaceful Kumaon Hills.",
+    "Learn about Iridium Blu Hotel At Kainchi Dham. Luxury boutique accommodation surrounded by the peaceful Kumaon Hills.",
   alternates: {
     canonical: canonical("/about"),
   },

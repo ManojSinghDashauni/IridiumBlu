@@ -1,16 +1,26 @@
 const SITE_URL = "https://iridiumblu.com";
 
 export const PROPERTY = {
-  name: "iridiumblu",
-  legalName: "iridiumblu Hotel",
-  description: "A Unit Of Sydruv LLP",
+  name: "Iridium Blu Hotel",
+  legalName: "Iridium Blu Hotel",
+  alternateName: "Iridium Blu",
+  slogan: "A Unit of Sydruv LLP",
+  description: "Luxury mountain-view hotel near Kainchi Dham Temple, Nainital.",
   url: SITE_URL,
-  logo: `${SITE_URL}/SVG/circle b.svg`,
+  logo: `${SITE_URL}/logo-mobile.png`,
   image: `${SITE_URL}/og-cover.jpg`,
   telephone: "+91-77788-83561",
   telephone2: "+91-77788-83563",
-  priceRange: "₹₹₹",
+  priceRange: "₹6000 - ₹10500",
   email: "resv@iridiumblue.com",
+  foundingDate: "2025",
+  currenciesAccepted: "INR",
+
+  paymentAccepted: ["Cash", "Credit Card", "Debit Card", "UPI"],
+  checkinTime: "14:00",
+
+  checkoutTime: "12:00",
+
   address: {
     streetAddress: "Kainchi Dham Road",
     addressLocality: "Nainital",
@@ -50,6 +60,13 @@ export function hotelSchema(overrides = {}) {
     "@context": "https://schema.org",
     "@type": "Hotel",
     "@id": `${PROPERTY.url}#hotel`,
+
+    logo: PROPERTY.logo,
+    email: PROPERTY.email,
+    checkinTime: PROPERTY.checkinTime,
+    checkoutTime: PROPERTY.checkoutTime,
+    currenciesAccepted: PROPERTY.currenciesAccepted,
+    paymentAccepted: PROPERTY.paymentAccepted,
     name: PROPERTY.name,
     description: PROPERTY.description,
     url: PROPERTY.url,

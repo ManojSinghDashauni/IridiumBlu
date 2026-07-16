@@ -1,7 +1,4 @@
-import { MetadataRoute } from "next";
-
-const BASE_URL = "https://earthy-glow-next.lovable.app";
-
+const BASE_URL = "https://iridiumblu.com/sitemap.xml";
 export default function robots() {
   return {
     rules: { userAgent: "*", allow: "/" },

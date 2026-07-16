@@ -3,9 +3,9 @@ const SITE_URL = "https://iridiumblu.com";
 export const PROPERTY = {
   name: "iridiumblu",
   legalName: "iridiumblu Hotel",
-  description: "A Unit of SYDRUV LLP",
+  description: "A Unit Of Sydruv LLP",
   url: SITE_URL,
-  logo: `${SITE_URL}/logo.png`,
+  logo: `${SITE_URL}/SVG/circle b.svg`,
   image: `${SITE_URL}/og-cover.jpg`,
   telephone: "+91-77788-83561",
   telephone2: "+91-77788-83563",

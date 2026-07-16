@@ -31,6 +31,7 @@ import {
   PROPERTY,
 } from "@/lib/seo/structured-data";
 import ContentSection from "@/components/ContentSection";
+import Testimonials from "@/components/Testimonials";
 
 export const metadata = {
   title: "Iridium Blu Hotel — Premium Stay near Kainchi Dham",
@@ -460,25 +461,25 @@ function DirectBookingBenefits() {
                     TESTIMONIALS
 ========================================================== */
 
-function Testimonials() {
-  return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
-      <p className="text-xs uppercase tracking-[0.3em] text-primary text-center">Guests</p>
-      <GsapReveal className="mt-10 grid gap-10 md:grid-cols-3" stagger={0.12}>
-        {testimonials.map((t) => (
-          <figure key={t.author} className="text-center">
-            <blockquote className="font-display text-2xl leading-snug text-foreground">
-              "{t.quote}"
-            </blockquote>
-            <figcaption className="mt-5 text-sm text-muted-foreground">
-              {t.author} · {t.location}
-            </figcaption>
-          </figure>
-        ))}
-      </GsapReveal>
-    </section>
-  );
-}
+// function Testimonials() {
+//   return (
+//     <section className="mx-auto max-w-7xl px-6 py-24">
+//       <p className="text-xs uppercase tracking-[0.3em] text-primary text-center">Guests</p>
+//       <GsapReveal className="mt-10 grid gap-10 md:grid-cols-3" stagger={0.12}>
+//         {testimonials.map((t) => (
+//           <figure key={t.author} className="text-center">
+//             <blockquote className="font-display text-2xl leading-snug text-foreground">
+//               "{t.quote}"
+//             </blockquote>
+//             <figcaption className="mt-5 text-sm text-muted-foreground">
+//               {t.author} · {t.location}
+//             </figcaption>
+//           </figure>
+//         ))}
+//       </GsapReveal>
+//     </section>
+//   );
+// }
 
 /* ==========================================================
                     CONTACT CTA

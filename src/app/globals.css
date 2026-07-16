@@ -5,6 +5,24 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 60px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(255,255,255,.35);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 42px;
+  border-radius: 999px;
+  background: white;
+}
+
 /*
  * Boutique Hotel — Earthy palette mapped from HSL tokens.
  * Tailwind v4: map CSS vars to utilities via @theme inline (hsl() wrappers).

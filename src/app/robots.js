@@ -1,8 +1,6 @@
-import type { MetadataRoute } from "next";
-
 const BASE_URL = "https://iridiumblu.com";
 
-export default function robots(): MetadataRoute.Robots {
+export default function robots() {
   return {
     rules: [
       {

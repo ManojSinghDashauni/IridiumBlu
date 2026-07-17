@@ -9,8 +9,10 @@ export function SiteFooter() {
           <div className="font-display text-2xl">Iridium<span className="text-primary"> Blu</span></div>
           <p className="mt-3 text-sm text-muted-foreground leading-relaxed">A boutique Himalayan stay.</p>
         </div>
-        <FooterCol title="Stay"><FooterLink href="/hotels">Rooms & Suites</FooterLink><FooterLink href="/itineraries">Itineraries</FooterLink><FooterLink href="/dining">Dining</FooterLink><FooterLink href="/events">Events</FooterLink></FooterCol>
-        <FooterCol title="Explore"><FooterLink href="/things-to-do">Things to Do</FooterLink><FooterLink href="/about">About</FooterLink><FooterLink href="/contact">Contact</FooterLink></FooterCol>
+        <FooterCol title="Stay"><FooterLink href="/hotels">Rooms</FooterLink><FooterLink href="/dining">Dining</FooterLink><FooterLink href="/about">About</FooterLink><FooterLink href="/contact">Contact</FooterLink></FooterCol>
+
+        
+        <FooterCol title="Policy"><FooterLink href="/privacy-policy">Privacy Policy</FooterLink><FooterLink href="/service-delivery-policy">Service Policy</FooterLink><FooterLink href="/booking-payment-policy">Booking Payment Policy</FooterLink></FooterCol>
         <FooterCol title="Reach us">
           <p className="text-sm text-muted-foreground">{PROPERTY.address.streetAddress}<br />{PROPERTY.address.addressLocality}, {PROPERTY.address.addressRegion} {PROPERTY.address.postalCode}</p>
           <p className="mt-3 text-sm text-muted-foreground"><a href={`tel:${PROPERTY.telephone}`}>{PROPERTY.telephone}</a><br /><a href={`tel:${PROPERTY.telephone2}`}>{PROPERTY.telephone2}</a><br /><a href={`mailto:${PROPERTY.email}`}>{PROPERTY.email}</a></p>

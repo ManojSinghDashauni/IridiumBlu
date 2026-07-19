@@ -4,9 +4,9 @@ const service = {
     description:
       "This Service Delivery Policy explains how IRIDIUM BLU HOTEL provides accommodation, dining, and hospitality services, including booking, check-in, guest responsibilities, and service conditions.",
   
-    effectiveDate: "01 July 2026",
+    effectiveDate: "12 January 2026",
   
-    updated: "01 July 2026",
+    updated: "19 July 2026",
   
     sections: [
   
@@ -314,8 +314,17 @@ const service = {
   
         paragraphs: [
           "IRIDIUM BLU HOTEL reserves the right to modify this Service Delivery Policy at any time.",
-  
-          "The latest version will always be available on the official website."
+          <>
+      The latest version will always be available on{" "}
+      <a
+        href="https://iridiumblu.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-medium text-primary underline hover:opacity-80"
+      >
+        www.iridiumblu.com
+      </a>.
+    </>
         ]
       },
   
@@ -330,16 +339,27 @@ const service = {
             value: "IRIDIUM BLU HOTEL"
           },
           {
-            label: "Phone",
-            value: "+91 77788 83561 / +91 77788 83563"
+            label: "Reservations",
+            value: "+91 77788 83561"
+          },
+          {
+            label: "WhatsApp",
+            value: "+91 77788 83563"
           },
           {
             label: "Email",
-            value: "resv@iridiumblue.com"
+            value: "resv@iridiumblu.com"
           },
           {
             label: "Website",
-            value: "https://iridiumblu.com"
+            value:  <a
+            href="https://iridiumblu.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary underline hover:opacity-80"
+          >
+            www.iridiumblu.com
+          </a>
           },
           {
             label: "Address",

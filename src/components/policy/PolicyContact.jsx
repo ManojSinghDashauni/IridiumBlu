@@ -54,10 +54,10 @@ export default function PolicyContact() {
                 </p>
   
                 <a
-                  href="mailto:resv@iridiumblue.com"
+                  href="mailto:resv@iridiumblu.com"
                   className="mt-3 block font-medium hover:text-primary transition break-all"
                 >
-                  resv@iridiumblue.com
+                  resv@iridiumblu.com
                 </a>
               </div>
   
@@ -88,7 +88,7 @@ export default function PolicyContact() {
                   rel="noopener noreferrer"
                   className="mt-3 block font-medium hover:text-primary transition"
                 >
-                  iridiumblu.com
+                  www.iridiumblu.com
                 </a>
               </div>
   

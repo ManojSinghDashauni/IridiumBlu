@@ -4,9 +4,9 @@ const booking = {
     description:
       "This Booking & Payment Policy explains the terms governing reservations, advance payments, check-in requirements, cancellations, refunds, and payment procedures at IRIDIUM BLU HOTEL.",
   
-    effectiveDate: "01 July 2026",
+    effectiveDate: "12 January 2026",
   
-    updated: "01 July 2026",
+    updated: "19 July 2026",
   
     sections: [
   
@@ -17,8 +17,18 @@ const booking = {
   
         paragraphs: [
           "This Booking & Payment Policy governs reservations, advance payments, check-in requirements, and payment procedures for stays at IRIDIUM BLU HOTEL (A Unit of SYDRUV LLP).",
-  
-          "By making a booking through our website, phone, WhatsApp, or authorized booking partners, guests agree to the terms outlined in this policy."
+
+          <>
+          By making a booking through {" "}
+          <a
+            href="https://iridiumblu.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary underline hover:opacity-80"
+          >
+            www.iridiumblu.com
+          </a>, phone, WhatsApp, or authorized booking partners, guests agree to the terms outlined in this policy.
+        </>
         ]
       },
   
@@ -304,7 +314,17 @@ const booking = {
         paragraphs: [
           "IRIDIUM BLU HOTEL reserves the right to modify this Booking & Payment Policy at any time.",
   
-          "The latest version will always be available on the official website."
+          <>
+          The latest version will always be available on{" "}
+          <a
+            href="https://iridiumblu.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary underline hover:opacity-80"
+          >
+            www.iridiumblu.com
+          </a>.
+        </>
         ]
       },
   
@@ -319,19 +339,30 @@ const booking = {
             value: "IRIDIUM BLU HOTEL"
           },
           {
-            label: "Phone",
-            value: "+91 77788 83561 / +91 77788 83563"
+            label: "Reservations",
+            value: "+91 77788 83561"
+          },
+          {
+            label: "WhatsApp",
+            value: "+91 77788 83563"
           },
           {
             label: "Email",
-            value: "resv@iridiumblue.com"
+            value: "resv@iridiumblu.com"
           },
           {
             label: "Website",
-            value: "https://iridiumblu.com"
+            value:  <a
+            href="https://iridiumblu.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary underline hover:opacity-80"
+          >
+            www.iridiumblu.com
+          </a>
           },
           {
-            label: "Address",
+            label: "Hotel Address",
             value: "Kainchi Dham, District Nainital, Uttarakhand, India"
           }
         ]

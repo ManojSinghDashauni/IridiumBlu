@@ -12,18 +12,18 @@ export const SITE = {
   // state: "Uttarakhand",
   // hours: "7:00 AM – 8:00 PM, all days",
   geo: {
-    latitude: 29.4328125,
-    longitude: 79.5086875,
+    latitude: 29.4327225,
+    longitude: 79.5093585,
   },
 
   mapsEmbed:
-    "https://www.google.com/maps?q=29.4328125,79.5086875&z=17&output=embed",
+    "https://www.google.com/maps?q=29.4327225,79.5093585&z=17&output=embed",
 
   mapsDirections:
-    "https://www.google.com/maps/dir/?api=1&destination=29.4328125,79.5086875",
+    "https://www.google.com/maps/dir/?api=1&destination=29.4327225,79.5093585",
 
   googleMapsUrl:
-    "https://www.google.com/maps/place/Iridium+Blu+Hotel+(a+unit+of+SYDRUV+LLP)/@29.4328125,79.5086875,17z/data=!3m1!4b1!4m6!3m5!1s0x39a0a3003a38f9c5:0xfce823cd512c06de!8m2!3d29.4328125!4d79.5086875!16s%2Fg%2F11npsy2tgk",
+    "https://www.google.com/maps/place/Iridium+Blu+Hotel+(a+unit+of+SYDRUV+LLP)/@29.4327225,79.5093585,17z/data=!3m1!4b1!4m6!3m5!1s0x39a0a3003a38f9c5:0xfce823cd512c06de!8m2!3d29.4328125!4d79.5086875!16s%2Fg%2F11npsy2tgk",
 };
 
 

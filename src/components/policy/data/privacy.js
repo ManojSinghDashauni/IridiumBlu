@@ -2,11 +2,22 @@ const privacy = {
     title: "Privacy Policy",
   
     description:
-      "This Privacy Policy explains how IRIDIUM BLU HOTEL collects, uses, stores, shares, and protects your personal information when you use our website or hotel services.",
+    <>
+    This Privacy Policy explains how IRIDIUM BLU HOTEL collects, uses, stores, shares, and protects your personal information when you use {" "}
+    <a
+      href="https://iridiumblu.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium text-primary underline hover:opacity-80"
+    >
+      www.iridiumblu.com
+    </a> or hotel services.
+  </>,
+
   
-    effectiveDate: "01 July 2026",
+    effectiveDate: "12 January 2026",
   
-    updated: "01 July 2026",
+    updated: "19 July 2026",
   
     sections: [
   
@@ -18,9 +29,28 @@ const privacy = {
         paragraphs: [
           "Welcome to IRIDIUM BLU HOTEL (A Unit of SYDRUV LLP). We respect your privacy and are committed to protecting your personal information.",
   
-          "This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, make a reservation, or use our hotel services.",
-  
-          "By accessing our website or using our services, you agree to the terms of this Privacy Policy."
+          <>
+          This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit {" "}
+          <a
+            href="https://iridiumblu.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary underline hover:opacity-80"
+          >
+            www.iridiumblu.com
+          </a>, make a reservation, or use our hotel services.
+        </>,
+          <>
+          By accessing {" "}
+          <a
+            href="https://iridiumblu.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary underline hover:opacity-80"
+          >
+            www.iridiumblu.com
+          </a> or using our services, you agree to the terms of this Privacy Policy.
+        </>
         ]
       },
   
@@ -71,11 +101,39 @@ const privacy = {
         title: "Cookies & Tracking Technologies",
   
         paragraphs: [
-          "Our website uses cookies and similar technologies to improve functionality, remember preferences, analyze website traffic, and enhance user experience."
+
+          <>
+      <a
+        href="https://iridiumblu.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-medium text-primary underline hover:opacity-80"
+      >
+        www.iridiumblu.com
+      </a> uses cookies and similar technologies to improve functionality, remember preferences, analyze {" "}
+      <a
+        href="https://iridiumblu.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-medium text-primary underline hover:opacity-80"
+      ></a>
+      traffic, and enhance user experience.
+    </>
         ],
   
         note:
-          "You may disable cookies through your browser settings; however, some website features may not function properly."
+
+        <>
+        By making a booking through {" "}
+        <a
+          href="https://iridiumblu.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-primary underline hover:opacity-80"
+        >
+          www.iridiumblu.com
+        </a> features may not function properly.
+      </>
       },
   
       {
@@ -154,7 +212,26 @@ const privacy = {
         title: "Third-Party Websites",
   
         paragraphs: [
-          "Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of external websites."
+          <>
+          <a
+            href="https://iridiumblu.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary underline hover:opacity-80"
+          >
+            www.iridiumblu.com
+          </a> may contain links to third-party {" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary underline hover:opacity-80"
+          >www.iridiumblu.coms</a>. We are not responsible for the privacy practices or content of external {" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary underline hover:opacity-80"
+          >www.iridiumblu.coms</a>.
+        </>
         ]
       },
   
@@ -176,7 +253,17 @@ const privacy = {
         paragraphs: [
           "IRIDIUM BLU HOTEL reserves the right to update or modify this Privacy Policy at any time.",
   
-          "The latest version will always be published on our official website."
+          <>
+          The latest version will always be available on{" "}
+          <a
+            href="https://iridiumblu.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary underline hover:opacity-80"
+          >
+            www.iridiumblu.com
+          </a>.
+        </>
         ]
       },
   
@@ -191,16 +278,27 @@ const privacy = {
             value: "IRIDIUM BLU HOTEL"
           },
           {
-            label: "Phone",
-            value: "+91 77788 83561 / +91 77788 83563"
+            label: "Reservations",
+            value: "+91 77788 83561"
+          },
+          {
+            label: "WhatsApp",
+            value: "+91 77788 83563"
           },
           {
             label: "Email",
-            value: "resv@iridiumblue.com"
+            value: "resv@iridiumblu.com"
           },
           {
             label: "Website",
-            value: "https://iridiumblu.com"
+            value:  <a
+            href="https://iridiumblu.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary underline hover:opacity-80"
+          >
+            www.iridiumblu.com
+          </a>
           },
           {
             label: "Address",

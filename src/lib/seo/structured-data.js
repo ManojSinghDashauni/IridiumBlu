@@ -12,7 +12,7 @@ export const PROPERTY = {
   telephone: "+91-77788-83561",
   telephone2: "+91-77788-83563",
   priceRange: "₹6000 - ₹10500",
-  email: "resv@iridiumblue.com",
+  email: "resv@iridiumblu.com",
   foundingDate: "2025",
   currenciesAccepted: "INR",
 

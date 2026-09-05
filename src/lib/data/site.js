@@ -41,40 +41,40 @@ export function bookingMessage(room) {
 export const rooms = [
   {
     id: "deluxe",
-    name: "Deluxe room with private outdoor seating",
+    name: "Deluxe Room",
     description:
       "Perfect for couples, solo travellers, and pilgrims seeking comfort and convenience just minutes from Kainchi Dham.",
-    pricePerNight: 6000,
+    pricePerNight: 3500,
     idealFor: ["Couples", "Solo Travellers", "Pilgrims"],
     amenities: ["King Size Bed", "Smart LED TV", "Wi-Fi", "Air Conditioning"],
     image:"/image/deluxe.jpeg",
   },
   {
     id: "premium-deluxe",
-    name: "Premium deluxe room with balcony and mountain view",
+    name: "Deluxe Double Room with Balcony",
     description:
       "Enhanced comfort with spacious interiors, elegant décor, and premium amenities for a relaxing Himalayan stay.",
-    pricePerNight: 7000,
+    pricePerNight: 4500,
     idealFor: ["Couples", "Small Families", "Long Stay Guests"],
     amenities: ["King Size Bed", "Premium Linen", "Seating Area", "Tea/Coffee Maker"],
     image:"/image/Premium.jpeg",
   },
   {
     id: "executive-mountain-view",
-    name: "Executive loft room with balcony and mountain view",
+    name: "Superior Family Room",
     description:
       "Wake up to breathtaking Himalayan mountain views while enjoying the finest comforts of a premium boutique stay.",
-    pricePerNight: 8500,
+    pricePerNight: 5000,
     idealFor: ["Nature Lovers", "Honeymoon Couples", "Premium Travellers"],
     amenities: ["Mountain View", "King Size Bed", "Premium Bath", "Writing Desk"],
     image:"/image/Executive.jpeg",
   },
   {
     id: "family",
-    name: "Family room with balcony and mountain view",
+    name: "Family Room with Mountain View",
     description:
       "Spacious room with a King Size Bed and a Large Upper King Size Bunk Bed (selected rooms) — ideal for families with children and small groups.",
-    pricePerNight: 10000,
+    pricePerNight: 5000,
     idealFor: ["Families", "Pilgrimage Groups", "Friends Travelling Together"],
     amenities: ["King Bed + Bunk", "Family Seating", "Extra Bed on Request", "Kids Friendly"],
     image:"/image/Family.jpeg",
@@ -272,13 +272,13 @@ export const itineraries = [
 
 
 export const eventTypes = [
-  {
-    title: "Intimate Weddings",
-    description: "Forest mandap, candlelit dinners, and full-property buyouts up to 80 guests.",
-    capacity: "Up to 80 guests",
-    image:
-      "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80",
-  },
+  // {
+  //   title: "Intimate Weddings",
+  //   description: "Forest mandap, candlelit dinners, and full-property buyouts up to 80 guests.",
+  //   capacity: "Up to 80 guests",
+  //   image:
+  //     "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80",
+  // },
   {
     title: "Corporate Offsites",
     description: "Brainstorms by the river, breakout cabins, and farm-to-table lunches.",

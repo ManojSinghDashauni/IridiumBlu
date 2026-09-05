@@ -3,11 +3,18 @@ import { ArrowRight, MapPin } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { GsapReveal } from "@/components/GsapReveal";
 import { Button } from "@/components/ui/button";
+import forest from "../../../public/things/forest pine.jpg"
+import golu from "../../../public/things/golu.webp"
+import kaichi from "../../../public/things/kaichi.jpg"
+import nanital from "../../../public/things/nainital.jpg"
+import naukuchiya from "../../../public/things/naukuchiya.jpg"
+import tea from "../../../public/things/tea estate.jpg"
 import {
   breadcrumbSchema,
   canonical,
   touristAttractionListSchema,
 } from "@/lib/seo/structured-data";
+import Image from "next/image";
 
 export const metadata = {
   title: "Things to Do — Explore Kainchi & Nainital",
@@ -18,52 +25,46 @@ export const metadata = {
 
 const attractions = [
   {
-    name: "Kainchi Dham Ashram",
+    name: "Kainchi Dham",
     distance: "1.2 km away",
     description:
       "The peaceful ashram of Neem Karoli Baba, nestled in the valley. It is a scenic 15-minute walk along the river road from our retreat.",
-    image:
-      "https://images.unsplash.com/photo-1545158535-c3f7168c28b6?auto=format&fit=crop&w=800&q=80",
+    image:kaichi
   },
   {
     name: "Nainital Lake",
     distance: "18 km away",
     description:
       "A stunning crescent-shaped freshwater lake. Enjoy a quiet morning boat ride before the afternoon crowds arrive.",
-    image:
-      "https://images.unsplash.com/photo-1593693397690-362bb9a10966?auto=format&fit=crop&w=800&q=80",
+    image: nanital
   },
   {
     name: "Pine Forest Trails",
     distance: "0.5 km away",
     description:
       "Step right out of the property and onto ancient shepherd trails that wind through dense, fragrant deodar and pine forests.",
-    image:
-      "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=800&q=80",
+    image: forest
   },
   {
     name: "Golu Devta Temple (Ghorakhal)",
     distance: "12 km away",
     description:
       "Known as the temple of a million bells. Devotees write their wishes on paper and hang them alongside brass bells.",
-    image:
-      "https://images.unsplash.com/photo-1626292395507-69502b4edc23?auto=format&fit=crop&w=800&q=80",
+    image: golu
   },
   {
     name: "Bhowali Tea Estate",
     distance: "8 km away",
     description:
       "Take a short drive to the terraced tea gardens of Bhowali. A perfect spot for an afternoon picnic and picking up local preserves.",
-    image:
-      "https://images.unsplash.com/photo-1597211684565-dca64d72bdce?auto=format&fit=crop&w=800&q=80",
+    image: tea
   },
   {
     name: "Naukuchiatal",
     distance: "22 km away",
     description:
       "The 'Lake of Nine Corners'. It is much quieter than Nainital and offers kayaking, paragliding, and peaceful lakeside walks.",
-    image:
-      "https://images.unsplash.com/photo-1610052737632-475298516fb8?auto=format&fit=crop&w=800&q=80",
+    image:naukuchiya
   },
 ];
 
@@ -108,18 +109,22 @@ export default function ThingsToDoPage() {
 
       {/* Attractions Grid */}
       <section className="mx-auto max-w-7xl px-6 pb-24">
-        <GsapReveal className="grid gap-8 md:grid-cols-2 lg:grid-cols-3" stagger={0.12}>
+        <GsapReveal
+          className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+          stagger={0.12}
+        >
           {attractions.map((attraction) => (
             <article
               key={attraction.name}
               className="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl transition-all duration-500 flex flex-col"
             >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
                   src={attraction.image}
                   alt={attraction.name}
-                  loading="lazy"
-                  className="size-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">
@@ -144,7 +149,8 @@ export default function ThingsToDoPage() {
             Need help planning your days?
           </h3>
           <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-            We can arrange guided forest walks, local taxis, and picnic baskets for your day trips. Just let us know what pace you are looking for.
+            We can arrange guided forest walks, local taxis, and picnic baskets
+            for your day trips. Just let us know what pace you are looking for.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" className="rounded-full px-7">

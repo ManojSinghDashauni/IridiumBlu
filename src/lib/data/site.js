@@ -44,7 +44,7 @@ export const rooms = [
     name: "Deluxe Room",
     description:
       "Perfect for couples, solo travellers, and pilgrims seeking comfort and convenience just minutes from Kainchi Dham.",
-    pricePerNight: 3500,
+    pricePerNight: 7000,
     idealFor: ["Couples", "Solo Travellers", "Pilgrims"],
     amenities: ["King Size Bed", "Smart LED TV", "Wi-Fi", "Air Conditioning"],
     image:"/image/deluxe.jpeg",
@@ -54,31 +54,31 @@ export const rooms = [
     name: "Deluxe Double Room with Balcony",
     description:
       "Enhanced comfort with spacious interiors, elegant décor, and premium amenities for a relaxing Himalayan stay.",
-    pricePerNight: 4500,
+    pricePerNight: 8000,
     idealFor: ["Couples", "Small Families", "Long Stay Guests"],
     amenities: ["King Size Bed", "Premium Linen", "Seating Area", "Tea/Coffee Maker"],
     image:"/image/Premium.jpeg",
-  },
-  {
-    id: "executive-mountain-view",
-    name: "Superior Family Room",
-    description:
-      "Wake up to breathtaking Himalayan mountain views while enjoying the finest comforts of a premium boutique stay.",
-    pricePerNight: 5000,
-    idealFor: ["Nature Lovers", "Honeymoon Couples", "Premium Travellers"],
-    amenities: ["Mountain View", "King Size Bed", "Premium Bath", "Writing Desk"],
-    image:"/image/Executive.jpeg",
   },
   {
     id: "family",
     name: "Family Room with Mountain View",
     description:
       "Spacious room with a King Size Bed and a Large Upper King Size Bunk Bed (selected rooms) — ideal for families with children and small groups.",
-    pricePerNight: 5000,
+    pricePerNight: 9000,
     idealFor: ["Families", "Pilgrimage Groups", "Friends Travelling Together"],
     amenities: ["King Bed + Bunk", "Family Seating", "Extra Bed on Request", "Kids Friendly"],
-    image:"/image/Family.jpeg",
+    image:"/image/Executive.jpeg",
   },
+  {
+    id: "executive-mountain-view",
+    name: "Superior Family Room",
+    description:
+      "Wake up to breathtaking Himalayan mountain views while enjoying the finest comforts of a premium boutique stay.",
+    pricePerNight: 11000,
+    idealFor: ["Nature Lovers", "Honeymoon Couples", "Premium Travellers"],
+    amenities: ["Mountain View", "King Size Bed", "Premium Bath", "Writing Desk"],
+    image:"/image/Family.jpeg",
+  }
 ];
 
 export const roomAmenities = [

@@ -5,6 +5,7 @@ import { Toaster } from "sonner";
 import { Providers } from "@/components/providers";
 import "./globals.css";
 import { ExitIntent, FloatingActions } from "@/components/FloatingActions";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata = {
   title: {
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Providers>
+        <GoogleAnalytics />
           <SiteHeader />
           <main className="min-h-screen">{children}</main>
           <SiteFooter />
